@@ -71,18 +71,7 @@
                
                 <div class="margin">
                     <div class="userBox">
-                        <i class="fa fa-user" aria-hidden="true" id="fafa"></i>
-                        <p id="hover"><a href="homelogin.html">ACCOUNT</a></p>
-                        
-                    </div>
-                    
-                    <div class="userLogin">
-                        
-                        <button id="Orders"><a id="a" href="">Orders</a></button>
-                        <button id="Profile"><a id="a" href="">Profile</a></button>
-                        <button id="Wallet"><a id="a" href="">Wallet</a></button>
-                        <button id="Wishlist"><a id="a" href="">Wishlist</a></button>
-                        <button id="Logout"><a id="a" href="">Logout</a></button>
+                       <button id="hoverr" onclick="window.location.href='Login.html';">Sign in</button>
                     </div>
                    
                   
@@ -90,8 +79,7 @@
 
                 <div id="cartClick">
                   
-                    <img src="cartbag.png" alt="" id="cartItem" >
-
+                        <img src="cartbag.png" alt="" id="cartItem">
                         <p id="cartOnNum">0</p>
                     
                 </div>
@@ -350,7 +338,7 @@
     <div id="aftcurs">
         <h2>Best L'Oreal Paris Products Online</h2>
         <br>
-        <img src="https://images-static.nykaa.com/uploads/885e0cf9-7202-4d58-ae45-7fb1d5d7be2b.jpg?tr=w-1200,cm-pad_resize" onclick="window.location.href=`bodycare.html`;" />
+        <img src="https://images-static.nykaa.com/uploads/885e0cf9-7202-4d58-ae45-7fb1d5d7be2b.jpg?tr=w-1200,cm-pad_resize"/>
     </div>
     <p class="momo">Top Brands</p>
 
@@ -547,7 +535,6 @@
 
 <script>
     //class b4
-  
         var div1=document.createElement("div");
         div1.setAttribute("id" , "download");
         var i8=document.createElement("i")
@@ -876,14 +863,3 @@
     </script>
 
 
-<script>
-     const imageA = document.getElementById('cartItem');
-        imageA.addEventListener('click', () => {console.log("hi");
-            localStorage.setItem('referrerPage', "index.html");
-          window.location.href="./bag/cart/cart.html"
-        });
-        var cartCountText = document.getElementById("cartOnNum");
-            var cartData = JSON.parse(localStorage.getItem("cart")) || [];
-            cartCountText.textContent = cartData.length;
-        </script>
-     
